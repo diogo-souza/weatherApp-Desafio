@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 import {
   WiCloudy, WiSnowWind,
   WiRain, WiSprinkle, WiStormShowers, WiDirectionDown, WiDirectionUp, WiDaySunny, WiDegrees,
-  WiCelsius,
+  WiCelsius, WiSleet,
 } from 'react-icons/wi';
 import { IoEarth } from 'react-icons/io5';
 
@@ -78,6 +78,9 @@ function App() {
       if (clime === 'snow') {
         return <WiSnowWind size={180} style={{ fill: 'white' }} />;
       }
+      if (clime === 'mist') {
+        return <WiSleet size={180} style={{ fill: 'white' }} />;
+      }
       return <WiCloudy size={180} style={{ fill: 'white' }} />;
     }
     // TEMPERATURA ENTRE 6 E 17 ICONS BRANCOS
@@ -100,6 +103,9 @@ function App() {
       if (clime === 'snow') {
         return <WiSnowWind size={180} style={{ fill: 'white' }} />;
       }
+      if (clime === 'mist') {
+        return <WiSleet size={180} style={{ fill: 'white' }} />;
+      }
       return <WiCloudy size={180} style={{ fill: 'white' }} />;
     }
     // TEMPERATURA ABAIXO DE 6 ICONS PRETOS
@@ -121,6 +127,9 @@ function App() {
       }
       if (clime === 'snow') {
         return <WiSnowWind size={180} style={{ fill: 'black' }} />;
+      }
+      if (clime === 'mist') {
+        return <WiSleet size={180} style={{ fill: 'black' }} />;
       }
       return <WiCloudy size={180} style={{ fill: 'white' }} />;
     }
