@@ -1,13 +1,807 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Aktiv Grotesk", -apple-system, 
+  BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, "Helvetica Neue", sans-serif
 }
+
+.setArrows {
+  position:absolute;
+  right: 120px;
+  width: 300px;
+  padding: 80px;
+}
+
+.arrow1 {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 0px 10px 10px 10px;
+}
+
+.arrow2 {
+  position: absolute;
+  right: 0px;
+  width: 310px;
+  padding: 10px 0px 0px 10px;
+}
+
+/* PRIMEIRO APP */
+.App {
+  background-color: #616978;
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+}
+
+.App .location-box .location {
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.App .location-box .weather {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  color: #FFF;
+  font-size: 35px;
+}
+
+.App .weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 15px 0px 0px 0px;
+  padding: 0px 0px 5px 0px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 100;
+  text-align: center;
+}
+
+/* NAME TEMPS APP */
+
+.App .names-temps .dawn{
+  display: flex;
+  padding: 0px 15px 0px 15px;
+  color:white;
+}
+
+.App.names-temps .morning{
+  display: flex;
+  padding: 0px 15px 0px 15px;
+  color:white;
+}
+
+.App .names-temps .afternoon{
+  display: flex;
+  padding: 0px 15px 0px 15px;
+  color:white;
+}
+
+.App .names-temps .night{
+  display: flex;
+  padding: 0px 15px 0px 15px;
+  color:white;
+}
+
+/* NAME TEMPS APP */
+
+/* FIRST BOX APP */
+
+.App .first-box {
+  display: flex;
+  flex-direction:row;
+  margin: auto;
+  align-items: center;
+  padding: 15px;
+  justify-content: center;
+}
+
+.App .first-box .dawn{
+  display: flex;
+  padding: 0px 25px 0px 20px;
+  color:white;
+}
+
+.App .first-box .morning{
+  display: flex;
+  padding: 0px 30px 0px 30px;
+  color:white;
+}
+
+.App .first-box .afternoon{
+  display: flex;
+  padding: 0px 20px 0px 30px;
+  color:white;
+}
+
+.App .first-box .night{
+  display: flex;
+  padding: 0px 18px 0px 45px;
+  color:white;
+}
+
+/* FIRST BOX APP */
+
+/* NAME THINGS APP */
+
+.App .names-things{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+.App .names-things .wind-speed{
+  display: flex;
+  padding: 0px 2px 0px 10px;
+  color: white;
+}
+
+.App .names-things .sunrise{
+  display: flex;
+  padding: 0px 10px 0px 10px;
+  color: white;
+}
+
+.App .names-things .sunset{
+  display: flex;
+  padding: 0px 10px 0px 10px;
+  color: white;
+}
+
+.App .names-things .humidity{
+  display: flex;
+  padding: 0px 10px 0px 10px;
+  color: white;
+}
+
+/* NAME THINGS APP */
+
+/* SECOND BOX APP */
+
+.App .second-box {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.App .second-box .wind-speed{
+  display: flex;
+  padding: 0px 30px 0px 18px;
+  color: white;
+}
+
+.App .second-box .sunrise{
+  display: flex;
+  padding: 0px 25px 0px 5px;
+  color: white;
+}
+
+.App .second-box .sunset{
+  display: flex;
+  padding: 0px 0px 0px 20px;
+  color: white;
+}
+
+.App .second-box .humidity{
+  display: flex;
+  padding: 0px 20px 0px 40px;
+  color: white;
+}
+
+/* SECOND BOX APP */
+
+/* MAX-MIN APP */
+
+.App .max-and-min {
+  position:absolute;
+  right: 90px;
+  width: 300px;
+  padding: 82px;
+}
+
+.App .temp-max {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 0px 10px 10px 10px;
+  font-weight: 500;
+  color:white;
+}
+
+.App .temp-min {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 20px 0px 0px 10px;
+  font-weight: 500;
+  color:white;
+}
+
+/* MAX-MIN APP */
+
+.App .setCelsius {
+  position:absolute;
+  right: 140px;
+  width: 300px;
+  padding: 20px;
+  color:white;
+}
+
+/* FIM DO PRIMEIRO APP */
+
+/* APP SUNNY */
+
+.App.sunny {
+  background-color: #56CBDB;
+}
+
+.App.sunny .location-box .location {
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.App.sunny .location-box .weather {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  color: #FFF;
+  font-size: 35px;
+}
+
+.App.sunny .weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 15px 0px 0px 0px;
+  padding: 0px 0px 5px 0px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 100;
+  text-align: center;
+}
+
+/* NAME TEMPS SUNNY APP */
+
+.App.sunny .names-temps{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.App.sunny .names-temps .dawn{
+  display: flex;
+  padding: 0px 15px 0px 15px;
+  color:white;
+}
+
+.App.sunny .names-temps .morning{
+  display: flex;
+  padding: 0px 15px 0px 15px;
+  color:white;
+}
+
+.App.sunny .names-temps .afternoon{
+  display: flex;
+  padding: 0px 15px 0px 15px;
+  color:white;
+}
+
+.App.sunny .names-temps .night{
+  display: flex;
+  padding: 0px 15px 0px 15px;
+  color:white;
+}
+
+/* NAME TEMPS SUNNY APP */
+
+/* FIRST BOX SUNNY APP */
+
+.App.sunny .first-box {
+  display: flex;
+  flex-direction:row;
+  margin: auto;
+  align-items: center;
+  padding: 15px;
+  justify-content: center;
+}
+
+.App.sunny .first-box .dawn{
+  display: flex;
+  padding: 0px 25px 0px 20px;
+  color:white;
+}
+
+.App.sunny .first-box .morning{
+  display: flex;
+  padding: 0px 30px 0px 30px;
+  color:white;
+}
+
+.App.sunny .first-box .afternoon{
+  display: flex;
+  padding: 0px 20px 0px 30px;
+  color:white;
+}
+
+.App.sunny .first-box .night{
+  display: flex;
+  padding: 0px 18px 0px 45px;
+  color:white;
+}
+
+/* FIRST BOX SUNNY APP */
+
+/* NAME THINGS SUNNY APP */
+
+.App.sunny .names-things{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+.App.sunny .names-things .wind-speed{
+  display: flex;
+  padding: 0px 2px 0px 10px;
+  color: white;
+}
+
+.App.sunny .names-things .sunrise{
+  display: flex;
+  padding: 0px 10px 0px 10px;
+  color: white;
+}
+
+.App.sunny .names-things .sunset{
+  display: flex;
+  padding: 0px 10px 0px 10px;
+  color: white;
+}
+
+.App.sunny .names-things .humidity{
+  display: flex;
+  padding: 0px 10px 0px 10px;
+  color: white;
+}
+
+/* NAME THINGS SUNNY APP */
+
+/* SECOND BOX SUNNY APP */
+
+.App.sunny .second-box {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.App.sunny .second-box .wind-speed{
+  display: flex;
+  padding: 0px 30px 0px 18px;
+  color: white;
+}
+
+.App.sunny .second-box .sunrise{
+  display: flex;
+  padding: 0px 25px 0px 5px;
+  color: white;
+}
+
+.App.sunny .second-box .sunset{
+  display: flex;
+  padding: 0px 0px 0px 20px;
+  color: white;
+}
+
+.App.sunny .second-box .humidity{
+  display: flex;
+  padding: 0px 20px 0px 40px;
+  color: white;
+}
+
+/* SECOND BOX SUNNY APP */
+
+/* MAX-MIN APP */
+
+.App.sunny .max-and-min {
+  position:absolute;
+  right: 90px;
+  width: 300px;
+  padding: 82px;
+}
+
+.App.sunny .temp-max {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 0px 10px 10px 10px;
+  font-weight: 500;
+  color:white;
+}
+
+.App.sunny .temp-min {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 20px 0px 0px 10px;
+  font-weight: 500;
+  color:white;
+}
+
+/* MAX-MIN APP */
+
+/* CELSIUS APP */
+
+.App.sunny .setCelsius {
+  position:absolute;
+  right: 140px;
+  width: 300px;
+  padding: 20px;
+  color:white;
+}
+
+/* CELSIUS APP */
+
+/* FIM DO SUNNY */
+
+/* APP COLD */
+
+.App.cold {
+  background-color: #E0E0E0;
+}
+
+.App.cold .location-box .location{
+  color: black;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.App.cold .location-box .weather {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  color: black;
+  font-size: 35px;
+}
+
+.App.cold .weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 15px 0px 0px 0px;
+  padding: 0px 0px 5px 0px;
+  color: black;
+  font-size: 102px;
+  font-weight: 100;
+  text-align: center;
+}
+
+/* NAME TEMPS COLD APP */
+
+.App.cold .names-temps{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.App.cold .names-temps .dawn{
+  display: flex;
+  padding: 0px 15px 0px 15px;
+  color:black;
+}
+
+.App.cold .names-temps .morning{
+  display: flex;
+  padding: 0px 15px 0px 15px;
+  color:black;
+}
+
+.App.cold .names-temps .afternoon{
+  display: flex;
+  padding: 0px 15px 0px 15px;
+  color:black;
+}
+
+.App.cold .names-temps .night{
+  display: flex;
+  padding: 0px 15px 0px 15px;
+  color:black;
+}
+/* NAME TEMPS COLD APP */
+
+/* FIRST BOX COLD APP */
+
+.App.cold .first-box {
+  display: flex;
+  flex-direction:row;
+  margin: auto;
+  align-items: center;
+  padding: 15px;
+  justify-content: center;
+}
+
+.App.cold .first-box .dawn{
+  display: flex;
+  padding: 0px 25px 0px 20px;
+  color:black;
+}
+
+.App.cold .first-box .morning{
+  display: flex;
+  padding: 0px 30px 0px 30px;
+  color:black;
+}
+
+.App.cold .first-box .afternoon{
+  display: flex;
+  padding: 0px 20px 0px 30px;
+  color:black;
+}
+
+.App.cold .first-box .night{
+  display: flex;
+  padding: 0px 18px 0px 45px;
+  color:black;
+}
+/* FIRST BOX COLD APP */
+
+/* NAME THINGS COLD APP */
+
+.App.cold .names-things{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+
+.App.cold .names-things .wind-speed{
+  display: flex;
+  padding: 0px 2px 0px 10px;
+  color: black;
+}
+
+.App.cold .names-things .sunrise{
+  display: flex;
+  padding: 0px 10px 0px 10px;
+  color: black;
+}
+
+.App.cold .names-things .sunset{
+  display: flex;
+  padding: 0px 10px 0px 10px;
+  color: black;
+}
+
+.App.cold .names-things .humidity{
+  display: flex;
+  padding: 0px 10px 0px 10px;
+  color: black;
+}
+
+/* NAME THINGS COLD APP */
+
+/* SECOND BOX COLD APP */
+
+.App.cold .second-box {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.App.cold .second-box .wind-speed{
+  display: flex;
+  padding: 0px 30px 0px 18px;
+  color: black;
+}
+
+.App.cold .second-box .sunrise{
+  display: flex;
+  padding: 0px 25px 0px 5px;
+  color: black;
+}
+
+.App.cold .second-box .sunset{
+  display: flex;
+  padding: 0px 0px 0px 20px;
+  color: black;
+}
+
+.App.cold .second-box .humidity{
+  display: flex;
+  padding: 0px 20px 0px 40px;
+  color: black;
+}
+
+/* SECOND BOX COLD APP */
+
+/* MAX-MIN APP */
+
+.App.cold .max-and-min {
+  position:absolute;
+  right: 90px;
+  width: 300px;
+  padding: 82px;
+}
+
+.App.cold .temp-max {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 0px 10px 10px 10px;
+  font-weight: 500;
+  color:black;
+}
+
+.App.cold .temp-min {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 20px 0px 0px 10px;
+  font-weight: 500;
+  color:black;
+}
+
+/* MAX-MIN APP */
+
+/* CELSIUS APP */
+
+.App.cold .setCelsius {
+  position:absolute;
+  right: 140px;
+  width: 300px;
+  padding: 20px;
+  color:black;
+}
+
+/* CELSIUS APP */
+
+/* FIM DO COLD */
+
+/* Final dos APPS */
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.55));
+  padding: 25px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  position:relative;
+  display:flexbox;
+  margin: auto;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease; 
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.weather-box .weather {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  
+} 
+
+
+
+/* Começo da segunda box */
+
+.second-box {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.second-box .wind-speed{
+  display: flex;
+  padding: 0px 30px 0px 18px;
+}
+
+.second-box .sunrise{
+  display: flex;
+  padding: 0px 25px 0px 5px;
+}
+
+.second-box .sunset{
+  display: flex;
+  padding: 0px 0px 0px 20px;
+}
+
+.second-box .humidity{
+  display: flex;
+  padding: 0px 20px 0px 40px;
+}
+
+/* Final da segunda box */
